@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Mayuri Rajput</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Mayuri Rajput</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" id="hamburger-icon" onclick="toggleMenu()">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about " onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Mayuri Rajput profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Mayuri Rajput</h1>
+        <p class="section__text__p2">Fresher | Data Engineer | Python Developer </p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="/assets/linkedin.png"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/mayurirajput/';"
+            alt=""
+          />
+          <img
+            src="/assets/github.png"
+            class="icon"
+            onclick="location.href='https://github.com/Rajputmayuri'"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            class="about-pic"
+            src="./assets/about-me.jpg"
+            alt="Profile Picture"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                class="icon"
+                src="/assets/experience.png"
+                alt="Experience icon"
+              />
+              <h3>Experience</h3>
+              <p>Internship<br />At G-tech TechSkill Institute, Nasik</p>
+            </div>
+            <div class="details-container">
+              <img
+                class="icon"
+                src="/assets/education.png"
+                alt="Experience icon"
+              />
+              <h3>Education</h3>
+              <p>H.S.C in Computer Science<br />B.E. in Artificial Intelligence & Data Science</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+                As a student currently pursuing a Bachelor of Engineering 
+                in Artificial Intelligence and Data Science, I have accumulated 
+                several years of academic and practical experience in the field.
+                Throughout my coursework, I have engaged in various projects and
+                internships that have allowed me to apply my theoretical knowledge 
+                to real-world scenarios.
+
+                I have done Internship at Gtech tech skill company in machine learning 
+                models for predictive analytics, performed data cleaning 
+                and preprocessing, and collaborated with the data science
+                 team to deliver actionable insights.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="/assets/arrow.png"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+        alt=""
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Programming</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  class="icon"
+                  src="/assets/checkmark.png"
+                  alt="Experience icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  class="icon"
+                  src="/assets/checkmark.png"
+                  alt="Experience icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  class="icon"
+                  src="/assets/checkmark.png"
+                  alt="Experience icon"
+                />
+                <div>
+                  <h3>C++</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  class="icon"
+                  src="/assets/checkmark.png"
+                  alt="Experience icon"
+                />
+                <div>
+                  <h3>MySQL</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  class="icon"
+                  src="/assets/checkmark.png"
+                  alt="Experience icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  class="icon"
+                  src="/assets/checkmark.png"
+                  alt="Experience icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Certification</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  class="icon"
+                  src="/assets/checkmark.png"
+                  alt="Experience icon"
+                />
+                <div>
+                  <h3>Python For Data Science</h3>
+                  <p><a href="https://drive.google.com/file/d/1XILpYJ9o2t_bY34yxh99m0tL6kXwvmjK/view?usp=sharing">View</a></p>
+                </div>
+              </article>
+              <article>
+                <img
+                  class="icon"
+                  src="/assets/checkmark.png"
+                  alt="Experience icon"
+                />
+                <div>
+                  <h3>Power bi Certification</h3>
+                  <p><a href="PowerBI link">View</a></p>
+                </div>
+              </article>
+              <article>
+                <img
+                  class="icon"
+                  src="/assets/checkmark.png"
+                  alt="Experience icon"
+                />
+                <div>
+                  <h3>SQL Certification</h3>
+                  <p><a href="https://drive.google.com/file/d/1lGHM0wiG-mZxITG6sX_u0OI0DA7RBz38/view?usp=sharingIntermediate">View</a></p>
+                </div>
+              </article>
+              <article>
+                <img
+                  class="icon"
+                  src="/assets/checkmark.png"
+                  alt="Experience icon"
+                />
+                <div>
+                  <h3>Arduino-Sensor Interfacing</h3>
+                  <p><a href="https://drive.google.com/file/d/1T_NYRF436MOi7ASe2jaxDcSrW3J2VTN-/view?usp=sharing">View</a></p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="/assets/arrow.png"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+        alt=""
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                class="project-img"
+                src="/assets/project-1.png"
+                alt="project-1"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Brain Stroke Prediction</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/';"
+              >
+                GitHub
+              </button>
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://linkedin.com/';"
+              >
+                Live Demo
+              </button> -->
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                class="project-img"
+                src="/assets/project-2.png"
+                alt="project-1"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Population EDA</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Rajputmayuri/PopulationEDA/blob/main/Population_EDA1.ipynb';"
+              >
+                GitHub
+              </button>
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://linkedin.com/';"
+              >
+                Live Demo
+              </button> -->
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                class="project-img"
+                src="/assets/project-3.png"
+                alt="project-1"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">IOT Project</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://drive.google.com/file/d/1S1-4RfSyCgqmydLS_pqnx4B5XFT8ZvsA/view?usp=sharing';"
+              >
+                GoogleDrive
+              </button>
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://linkedin.com/';"
+              >
+                Live Demo
+              </button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="/assets/arrow.png"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+        alt=""
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get In Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="/assets/email.png"
+            class="icon contact-icon"
+            alt="Email icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">rajputmayuri1911@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="/assets/email.png"
+            class="icon contact-icon"
+            alt="Email icon"
+          />
+          <p><a href="https://www.linkedin.com/in/mayurirajput/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p></p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
